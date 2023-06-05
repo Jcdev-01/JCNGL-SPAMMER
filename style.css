@@ -19,6 +19,14 @@
     background-color: black;
     font-size: 20px;
     position: static;
+    animation: my-move 1s infinite;
+}
+@keyframes my-move {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
 }
 .btn-radius a{
   text-decoration: none;
