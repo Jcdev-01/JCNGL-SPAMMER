@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="images/bombicon.png"/>
+    <title>NGL Spammer</title>
+</head>
+<body style="background-color: black; height: 100vh;">
+    <div id="nav" class="sticky-top">
+        <nav class="spam-nav navbar bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand">
+                <img src="images/ngliconlogo.png"Logo" width="60" height="40" class="d-inline-block align-text-top">
+              </a>
+            </div>
+          </nav>
+    </div>
+    <!--Field-->
+  <div id="particles-js">
+    <form class="spam-field">
+      <h1>NGL Spammer</h1><br>
+      <img src="images/bomb-removebg-preview.png" class="rounded mx-auto d-block" alt="bomb" height="100px" width="200px">
+      <p>This is for educational purpose only. Dont harm any people.</p>
+      <div class="user-name input-group mb-3 mx-auto">
+        <span class="icon-user input-group-text">@</span>
+        <div class="form-floating">
+          <input type="text" class="user form-control" id="floatingInputGroup1" placeholder="Username" onclick="audio.play()">
+          <label for="floatingInputGroup1">Username</label>
+        </div>
+      </div>
+
+      <div class="spam-msg form-floating mx-auto">
+        <textarea class="msg form-control" placeholder="Leave a message" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Spam msg</label>
+      </div>
+       
+      <div class="spam-msg form-floating mx-auto">
+        <input type="number" class="form-control amount-msg" id="floatingInputGroup1" placeholder="Username">
+        <label for="floatingInputGroup1">Spam amount</label>
+      </div>
+
+      <div class="spam-msg d-grid gap-2">
+        <button class="btn" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Send</button>
+      </div>
+    </form>
+  </div>
+  <!--see the result-->
+  <div class="result-option offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">RESULT THREADS</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="result offcanvas-body">
+       
+    </div>
+
+    <div id="clear">
+      <p>Refresh the browser before sending messages again!</p>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="spam.js"></script>
+<script src="particle js/app.js"></script>
+<script src="particle js/particles.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</html>

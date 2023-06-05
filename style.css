@@ -1,0 +1,549 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+ body{
+    font-family: 'Roboto Mono', monospace;
+ }
+.home-nav{
+    padding: 30px;
+    font-size: 18px;
+}
+.home-nav{
+    background-color: #ec1187 !important;
+}
+.btn-radius{
+    border-radius: 50px;
+    padding: 15px;
+    background-color: black;
+    font-size: 20px;
+    position: static;
+}
+.btn-radius a{
+  text-decoration: none;
+  color: white;
+}
+.navbar-nav li{
+    padding-left: 30px;
+}
+.navbar-nav li a{
+    color: white;
+}
+/* Remove border from toggler */
+.navbar-toggler {
+    border: 0 !important;
+  }
+  
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+  
+  /* Lines of the Toggler */
+  .toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    display: block;
+    transition: all 0.2s;
+  }
+  
+  .middle-bar {
+    margin: 5px auto;
+  }
+  .navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+  
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+  
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+  }
+  
+  .navbar-toggler.collapsed .toggler-icon {
+    background-color: black;
+  }
+.container-image{
+    margin-left: 40px;
+}
+#section{
+   background-image: linear-gradient(360deg, #ff8d10, #ec1187);
+}
+#what-ngl{
+    margin-top: 120px;
+}
+#what-ngl h2{
+    margin-left: 70px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+}
+#what-ngl p{
+    margin-left: 70px;
+}
+.about-ngl{
+    padding: 50px;
+}
+.ngl-about{
+    padding-right: 500px;
+}
+#what-ngl h3{
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    margin-right: 100px;
+}
+ svg{
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ top: 160%;
+ z-index: -1;
+}
+video {
+  width: 50%;
+  height: auto;
+  margin-top: 100px;
+  position: relative;
+  right: 9%;
+  border: 5px solid #F79327;
+  border-radius: 30px;
+}
+.ngl-text{
+  margin-top: 4px;
+  padding: 150px;
+}
+.ngl-text ul{
+   margin-top: 20px;
+   text-decoration: underline;
+}
+.spam-nav{
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(29,29,21,1) 4%, rgba(252,34,174,1) 73%, rgba(234,69,252,1) 93%) !important;
+}
+.spam-nav a{
+   color: white;
+   outline: none !important;                        
+}
+.spam-field{
+  padding: 40px;
+  margin-top: 150px;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(29,29,21,1) 4%, rgba(252,34,174,1) 73%, rgba(13,1,14,1) 100%);
+  width: 40%;
+  position: relative;
+  left: 360px;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  bottom: 50px;
+}
+.spam-field h1{
+  font-family: 'Chakra Petch', sans-serif;
+  margin-top: 20px;
+  font-weight: 900;
+  color: #fff;
+  -webkit-animation: glow 59s ease-in-out infinite alternate;
+  -moz-animation: glow 59s ease-in-out infinite alternate;
+  animation: glow 59s ease-in-out infinite alternate;
+}
+.spam-field p{
+  color: white;
+}
+@keyframes glow{
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.user-name{
+  width: 100%;
+  margin-top: 50px;
+}
+.user-name label{
+  opacity: 0.7;
+}
+.user{
+  outline: 2px solid #e60073 !important;
+  border: 1px solid #e60073 !important;
+  box-shadow: none !important;
+  opacity: 0.7;
+}
+.icon-user{
+  outline: 2px solid #e60073 !important;
+  background-color: #ff4da6;
+  border: 1px solid #e60073 !important;
+}
+.spam-msg{
+  width: 100%;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+.spam-msg label{
+  opacity: 0.7;
+}
+.msg{
+  outline: 2px solid #e60073 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 50px;
+}
+.amount-msg{
+  outline: 2px solid #e60073 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 50px;
+}
+.spam-msg button{
+  background-color: #DB005B;
+  outline: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: white;
+}
+.spam-msg button:hover{
+  background-color: #ec1187;
+}
+#particles-js{
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: relative;
+ height: 100vh;
+}
+.particles-js-canvas-el{
+    position: absolute;
+    bottom: 300px;
+}
+.result-option{
+  background-color: #080202;
+  color: lightgreen;
+}
+.result-option h5{
+  color: white;
+}
+.btn-close{
+  background-color: pink !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  outline: none !important;
+}
+#clear{
+  text-align: center;
+  padding: 12px;
+}
+#footer-container{
+   width: 100%;
+   background-image: linear-gradient(360deg, #ff8d10, #ec1187);
+   padding: 60px;
+   color: white;
+   padding-bottom: 0;
+}
+#footer-container a{
+  color: white;
+  font-size: 18px;
+}
+#footer-container p{
+  margin-top: 20px;
+}
+.copyright{
+  font-size: 13px;
+}
+.last-section{
+  background-color: #DDE6ED;
+  padding: 6px;
+  width: 40%;
+  padding-right: 120px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  border: 2px solid black;
+  font-size: 13px;
+  border-radius: 30px !important;
+}
+.last-section img{
+  border-radius: 50% !important;
+  border: 3px solid black;
+}
+#github{
+  border: 0;
+  height: 30px;
+  width: 30px;
+}
+@media screen and (max-width: 1024px) {
+    .navbar-nav li{
+        padding-left: 20px;
+    }
+  }
+@media screen and (max-width: 768px) {
+    .ngl-about{
+        padding-right: 20px;
+    }
+    .spam-field{
+      padding: 24px;
+      margin-top: 150px;
+      text-align: center;
+      background: linear-gradient(90deg, rgba(29,29,21,1) 4%, rgba(252,34,174,1) 73%, rgba(13,1,14,1) 100%);
+      width: 51%;
+      position: relative;
+      left: 200px;
+      margin-bottom: 300px;
+      border-radius: 30px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .spam-field h1{
+      font-family: 'Chakra Petch', sans-serif;
+      margin-top: 20px;
+      font-weight: 900;
+      color: #fff;
+      -webkit-animation: glow 59s ease-in-out infinite alternate;
+      -moz-animation: glow 59s ease-in-out infinite alternate;
+      animation: glow 59s ease-in-out infinite alternate;
+    }
+    .spam-field p{
+      color: white;
+    }
+    @keyframes glow{
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+    }
+    .user-name{
+      width: 100%;
+      margin-top: 50px;
+    }
+    .user-name label{
+      opacity: 0.7;
+    }
+    .user{
+      outline: 2px solid #e60073 !important;
+      border: 1px solid #e60073 !important;
+      box-shadow: none !important;
+      opacity: 0.7;
+    }
+    .icon-user{
+      outline: 2px solid #e60073 !important;
+      background-color: #ff4da6;
+      border: 1px solid #e60073 !important;
+    }
+    .spam-msg{
+      width: 100%;
+      margin-top: 20px;
+      opacity: 0.7;
+    }
+    .spam-msg label{
+      opacity: 0.7;
+    }
+    .msg{
+      outline: 2px solid #e60073 !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      padding: 50px;
+    }
+    .spam-msg button{
+      background-color: #DB005B;
+      outline: none !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      color: white;
+    }
+    .spam-msg button:hover{
+      background-color: #ec1187;
+    }
+
+    svg{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 190%;
+      z-index: -1;
+     }
+     video {
+       width: 60%;
+       height: auto;
+       margin-top: 280px;
+       position: relative;
+       left: 20%;
+       border: 5px solid #F79327;
+       border-radius: 30px;
+     }
+
+     .ngl-text{
+      margin-top: 100px;
+      padding: 25px;
+    }
+
+    .last-section{
+      background-color: #DDE6ED;
+      padding: 6px;
+      width: 60%;
+      border: 2px solid black;
+      font-size: 13px;
+      border-radius: 30px !important;
+      margin-top: 100px;
+    }
+    .last-section h5{
+      font-size: 18px;
+    }
+    .last-section img{
+      border-radius: 50% !important;
+      border: 3px solid black;
+      height: 180px;
+      width: 180px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .ngl-about{
+        padding-right: 6px;
+    }
+    #what-ngl{
+        margin-top: 150px;
+    }
+ .spam-field{
+  padding: 30px;
+  margin-top: 150px;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(29,29,21,1) 4%, rgba(252,34,174,1) 73%, rgba(13,1,14,1) 100%);
+  width: 70%;
+  position: relative;
+  left: 60px;
+  margin-bottom: 300px;
+  border-radius: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.spam-field h1{
+  font-family: 'Chakra Petch', sans-serif;
+  margin-top: 20px;
+  font-weight: 900;
+  color: #fff;
+  -webkit-animation: glow 59s ease-in-out infinite alternate;
+  -moz-animation: glow 59s ease-in-out infinite alternate;
+  animation: glow 59s ease-in-out infinite alternate;
+}
+.spam-field p{
+  color: white;
+}
+@keyframes glow{
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+.user-name{
+  width: 100%;
+}
+.user-name label{
+  opacity: 0.4;
+}
+.user{
+  outline: 2px solid #e60073 !important;
+  border: 1px solid #e60073 !important;
+  box-shadow: none !important;
+}
+.icon-user{
+  outline: 2px solid #e60073 !important;
+  background-color: #ff4da6;
+  border: 1px solid #e60073 !important;
+}
+.spam-msg{
+  width: 100%;
+  margin-top: 20px;
+}
+.spam-msg label{
+  opacity: 0.4;
+}
+.msg{
+  outline: 2px solid #e60073 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 50px;
+}
+.spam-msg button{
+  background-color: #DB005B;
+  outline: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  color: white;
+}
+.spam-msg button:hover{
+  background-color: #ec1187;
+}
+
+#what-ngl h3{
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+ svg{
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ top: 200%;
+ z-index: -1;
+}
+video {
+  width: 90%;
+  height: auto;
+  margin-top: 280px;
+  position: relative;
+  left: 50%;
+  border: 5px solid #F79327;
+  border-radius: 30px;
+}
+.ngl-text{
+  margin-top: 100px;
+  padding: 25px;
+}
+.ngl-text ul{
+   margin-top: 20px;
+}
+
+.last-section{
+  background-color: #DDE6ED;
+  padding: 6px;
+  width: 90%;
+  border: 2px solid black;
+  font-size: 13px;
+  border-radius: 30px !important;
+}
+.last-section h5{
+  font-size: 18px;
+}
+.last-section img{
+  border-radius: 50% !important;
+  border: 3px solid black;
+  height: 150px;
+  width: 150px;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
